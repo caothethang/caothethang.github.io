@@ -24,12 +24,13 @@ ul.main li ul{
   top:60px;  
   
 }
-ul.main .a:hover{
+ul.main li:hover{
   background-color: red;
+  cursor: pointer;
 }
 ul.main li ul li{
-  background-color:grey;
-  border:1px solid white;
+  background-color:white;
+  border:1px solid black;
   width:200px;
 
 }
@@ -39,7 +40,9 @@ ul.main li:hover ul{
 }
 ul.main li li ul {
   display: none;
-
+}
+ul.main li li:hover{
+  background-color: grey;
 }
 ul.main li li:hover ul {
   position: absolute;
