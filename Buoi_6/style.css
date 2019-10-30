@@ -1,0 +1,81 @@
+.main{
+    width: 100%;
+    height: 2000px;
+}
+.menu{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    margin-left: 52%;
+    float: left;
+    box-shadow: 
+}
+i{
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 15px;
+    border-radius:20px 20px 20px 20px ;
+    margin: 10px;
+    float: left;
+}
+.anhnen{
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+i:hover{
+    background-color: blue;
+}
+.noidung{
+    float: left;
+    width: 100%;
+    height: 600px;
+    margin-top:40px ;
+}
+.anh1{
+    margin-left: 15%;
+    margin-top: 30px;
+    float: left;
+}
+.content1{
+    margin-left: 20px;
+    margin-top: 60px;
+    width: 25%;
+    height: 500px;
+    float: left;
+}
+b{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 50px;
+}
+.noidung2{
+    clear: both;
+    width: 100%;
+    height: 500px;
+}
+.anh2{
+    float:right;
+    margin-right: 15%;
+    margin-top: 30px;
+}
+.content2{
+    margin-left: 20%;
+    margin-right: 20px;
+    margin-top: 60px;
+    width: 25%;
+    height: 500px;
+}
+.power{
+    clear: both;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+span{
+    color: yellow;
+}
