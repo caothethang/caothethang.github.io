@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.left{
+    position: fixed;
+    width: 30%;
+    background-image: url(./profile_girl.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+
+.right{
+    margin-left: 32%;
+    width: 67%;
+    height: auto;
+    display: flex;
+    flex-direction: column;  
+}
+.right .name img{
+    margin-bottom: 0px;
+    width:0%;
+    height:0px;
+}
+.right .name{
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.right .name span{
+    background-color: lavender;
+    padding: 10px;   
+}
+.right .name span:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.myportfolio
+{
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.myportfolio .anh{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.myportfolio img
+{
+    margin-top: 20px;
+}
+.myportfolio .anhbentrai {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.myportfolio .anhbenphai {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    margin-left: 1%;
+}
+.about{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+.myskill{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.thongso{
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+.partner{
+    background-color: gray;
+    width: 25%;
+    height: 150px;
+    color: white;
+    text-align: center;
+}
+.partner p{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.resume{
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.resume span{
+    background-color: gray;
+    font-size: 18px;
+    height: 20px;
+    line-height: 20px;
+    padding: 20px; 
+}
+.resume span:hover{
+    background-color: lavender;
+    cursor: pointer;
+}
+.myreputation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.myreputation img{
+    border-radius: 50%;
+    width: 10%;
+    height: 100%;
+}
+.myreputation .bing{
+    display: flex;
+    margin-bottom: 10px;
+}
+.myreputation .a1{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.myprice{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.myprice .basic{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  2px 16px 30px -16px rgba(0,0,0,0.75);
+}
+.myprice .basic:hover{
+    box-shadow: 3px 31px 27px -9px rgba(0,0,0,0.6);;
+}
+.basic p{
+    height: 40px;
+    background-color:lavender;
+    border-bottom: 1px solid;
+    line-height: 40px;
+    font-size: 20px;
+}
+.cot{
+    display: flex;
+}
+.pro{
+    margin-left: 30px;
+    width: 100%;
+}
+.signup{
+    background-color: darkgray;
+    text-align: center;
+   
+}
+.signup span{
+    padding: 10px;
+    background-color: white;
+    width: 80px;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+}
+.signup span:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.contact{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+.contact p{
+    color: gray;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.contact i{
+    padding-right: 15px;
+    font-size: 25px;
+}
+.message{
+    margin-top: 100px;
+}
+.message span{
+    color: black;
+    background-color: lavender;
+    font-size: 15px;
+    padding: 14px;
+}
+.message input{
+    margin-top: 15px;
+    font-size: 20px;   
+}
+.message span:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+.footer
+{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    position: relative;
+    background-color: lavender;
+    color: gray;
+}
+.footer .icon{
+    position: absolute;
+    left: 40%;
+    top: 70px;
+    font-size: 20px;
+    text-align: center;
+}
+a{
+    color: gray;
+}
+.footer .icon i:hover{
+    color: blue;
+}
+@media all and (max-width:995px)
+{
+    .right .name img{
+        
+        margin-bottom: 40px;
+        width: 30%;
+        height: 300px;   
+    }
+    .left{
+        width: 0px;
+        height: 0px;
+    }
+    .right{
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%; 
+    }   
+}
+@media all and (max-width:650px)
+{
+    .right .name img{
+        visibility: visible;
+        margin-bottom: 40px;
+        width: 30%;
+        height: 300px;   
+    }
+    .left{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .right{
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%; 
+    }   
+    .thongso{
+        width: 100%;
+        flex-direction: column;
+    }
+    .thongso .partner{
+        width: 100%;
+    }
+    .myprice .cot{
+        flex-direction: column;
+    }
+    .myprice .cot .pro{
+        margin-left: 0px;
+    }
+}
