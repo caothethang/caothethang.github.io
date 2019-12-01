@@ -12,6 +12,7 @@ nav{
     position: fixed !important;
     z-index: 5;
     width: 100%;
+   
 }
 
 .navbar-nav li{
@@ -74,8 +75,6 @@ nav a > img{
 .menu-lang:hover ul{
     display: block;
 }
-
-
 .jetpack{
     width: 100%;
     height: auto;
@@ -291,7 +290,7 @@ h4{
     cursor: pointer;
     color: #039be5;
 }
-@media(max-width: 1200px){
+@media(max-width: 1240px){
     .nav-item{
         font-size: 14px;
     }
@@ -325,7 +324,6 @@ h4{
         visibility: hidden;
     }
 }
-
 @media(max-width: 960px){
     .news1{
         order: 2;
@@ -392,4 +390,5 @@ h4{
     .menu-footer ul li{
         display: block;
     }
+    
 }
