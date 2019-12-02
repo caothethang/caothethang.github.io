@@ -140,7 +140,6 @@ nav a > img{
     color: gray;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 32px;
 }
 h4{
     cursor: pointer;
@@ -290,6 +289,18 @@ h4{
     cursor: pointer;
     color: #039be5;
 }
+@media(max-width: 1200px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .start{
+        width: 15%;
+    }
+    .header .watch{
+        width: 15%;
+    }
+}
 @media(max-width: 1240px){
     .nav-item{
         font-size: 14px;
@@ -357,6 +368,12 @@ h4{
     .stack .hi{
         visibility: hidden;
     }
+    .header .start{
+        width: 25%;
+    }
+    .header .watch{
+        width: 25%;
+    }
 }
 @media(max-width: 767px){
     .news1{
@@ -389,5 +406,11 @@ h4{
     }
     .menu-footer ul li{
         display: block;
+    }
+    .header .start{
+        width: 45%;
+    }
+    .header .watch{
+        width: 45%;
     }
 }
