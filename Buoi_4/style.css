@@ -31,13 +31,13 @@ ul.main li:hover{
 ul.main li ul li{
   background-color:white;
   border:1px solid black;
-  width:200px;
+  width:150px;
 
 }
 ul.main li:hover ul{
   display: block;
 }
-}
+
 ul.main li li ul {
   display: none;
 }
@@ -47,6 +47,6 @@ ul.main li li:hover{
 ul.main li li:hover ul {
   position: absolute;
   display: block;
-  left:200px;
+  left:150px;
   top:0px;  
 }
