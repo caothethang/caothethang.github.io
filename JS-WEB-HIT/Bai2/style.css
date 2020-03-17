@@ -41,12 +41,13 @@
     margin-left: 25%;
     margin-right: 25%;
     overflow: hidden;
+    border: 1px solid black;
 }
 .picture_left_right img
 {
     width:150px; 
     height:150px;
-    border: 1px solid black;
+    
 }
 .picture_left_right img:hover
 {
