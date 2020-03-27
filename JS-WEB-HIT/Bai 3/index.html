@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Control</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="showInfo()">
+    <div class="Info"></div>
+    <pre id="content">
+    </pre>
+    <button type="button" id="btnUpdate" onclick="showViewInfo()">Update</button>
+    </div>
+    <div id="opacityDiv">
+    <div class="cover" onclick="CloseForm()"></div>
+    <form name="formControl" id="formcontrol">
+        <div class="formLeft">
+            <input type="text" name="title" id="title">
+            <div style="display: flex;margin-top: 20px">
+                <div class="formType" style="margin-right: 20px;">
+                    <label for="type">Type: </label>
+                    <select name="type" id="type">
+                        <option value="task">Task</option>
+                        <option value="feature">Feature</option>
+                        <option value="issue">Issue</option>
+                        <option value="bug">Bug</option>
+                    </select>
+                </div>
+                <div class="formState">
+                    <label for="state">State: </label>
+                    <select name="state" id="state">
+                        <option value="todo">Todo</option>
+                        <option value="inprocessing">In processing</option>
+                        <option value="inreview">Inreview</option>
+                        <option value="done">Done</option>
+                    </select>
+                </div>
+            </div>
+            <div class="priority">
+                <label for="priority">Priority: </label>
+                <input type="radio" name="priority" value="highest">Highest
+                <input type="radio" name="priority" value="high">High
+                <input type="radio" name="priority" value="medium">Medium
+                <input type="radio" name="priority" value="low">Low
+            </div>
+            <div class="allowFor">
+                <label for="allowFor">Issue allow for: </label><br>
+                <input type="checkbox" id="back_end" name="allowFor" value="back_end">Backend<br>
+                <input type="checkbox" id="front_end" name="allowFor" value="front_end">Frontend<br>
+                <input type="checkbox" id="function_test" name="allowFor" value="function_test">Function tester<br>
+                <input type="checkbox" id="performance_test" name="allowFor" value="performance_test">Performance tester
+            </div><br>
+            <label for="description">Description: </label><br>
+            <textarea id="description" name="description" value="" cols="50" rows="10"></textarea>
+            
+        </div>
+        <div class="formRight">
+            <div style="display: flex;flex-direction: column;justify-content: space-around;">
+            <label for="createdBy"><strong>Created by:</strong></label>
+            <input type="text" name="createdBy" id="createdBy"><br>
+            <label for="assignee"><strong>Assignee:</strong></label>
+            <input type="text" name="assignee" id="assignee"><br>
+            <label for="estimate"><strong>Estimate:</strong></label>
+            <input type="text" name="estimate" id="estimate"><br>
+            </div>  
+            <div class="btnSaveClose">
+            <button type="button" id="btnSave" onclick="saveViewInfo()">Save</button>
+            <button type="button" id="btnClose" onclick="CloseForm()">Close</button>
+            </div>
+        </div>
+    </form>
+</div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 2000px ;
+}
+#opacityDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+#formcontrol{
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    padding: 15px;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    background-color: lavender;
+    display: none;
+    z-index: 999;
+}
+#btnUpdate{
+    padding: 10px;
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 4px;
+    margin-left: 50px;
+    border: none;
+}
+#btnUpdate:hover{
+    cursor: pointer;
+    background-color: seagreen;
+}
+
+.formLeft div{
+    margin-top: 20px;
+}
+#title{
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    font-size: 20px bold;
+}
+.formRight{
+    padding: 15px;
+}
+.btnSaveClose{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin-top: 300px;
+    padding-left: 50px;
+}
+.btnSaveClose #btnSave {
+    background-color: steelblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#btnSave:hover {
+    background: #4d6fea;
+    cursor: pointer;
+
+}
+.btnSaveClose #btnClose {
+    background-color: lavender;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#close:hover{
+    background: #aaa;
+    cursor: pointer;
+}
