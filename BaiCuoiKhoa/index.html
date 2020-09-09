@@ -7,6 +7,8 @@
     <title>WooR - Rife Design</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,8 +18,9 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <a class="navbar-brand pl-3" href="#">WOOR</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
@@ -72,11 +75,34 @@
         </header>
         <!-- header -->
         <div class="container-fluid main">
-            
+            <!-- page-welcome -->
+            <div class="container-fluid type-animation page-welcome">
+                <div class="container">
+                    <span id="welcome-shop">WELCOME IN OUR <span id="shop-boutique"></span></span>
+                    <div class="container container-sm" style="margin: auto;margin-top: -80px;"><span
+                            style="font-size:23px;color:rgba(255,255,255,0.8);font-weight: 400;letter-spacing: 0.2px;">Customers
+                            don't just want to
+                            shop: they want to feel that the brand understands
+                            them.</span></div>
+                </div>
+                <div class="btn-go-shopping">
+                    <span style="font-size: 14px;font-weight: bold;text-transform: uppercase;line-height: 1em;letter-spacing: 2px;"><a href="#">GO SHOPPING<i style="color: white;font-size:14px;margin-left: 10px;"
+                                class="fas fa-long-arrow-alt-right"></i></a></span>
+                </div>
+            </div>
+            <!-- page-welcome -->
+            <!-- features-product -->
+            <div class="container-fluid">
+                
+                    <span>FEATURED PRODUCTS</span>
+                
+            </div>
+            <!-- features-product -->
         </div>
+
     </div>
-   
-    
+
+
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -87,7 +113,19 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-    <script>
-        
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script>
+    // type-animation
+    var typed = new Typed('#shop-boutique', {
+        strings: ['SHOP', 'BOUTIQUE'],
+        loop: true,
+        fadeOutDelay: 500,
+        typeSpeed: 50,
+        startDelay: 1000,
+        backSpeed: 100,
+        backDelay: 1000, // Default value
+    });
+    //
+</script>
+
 </html>
