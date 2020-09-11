@@ -86,18 +86,71 @@
                             them.</span></div>
                 </div>
                 <div class="btn-go-shopping">
-                    <span style="font-size: 14px;font-weight: bold;text-transform: uppercase;line-height: 1em;letter-spacing: 2px;"><a href="#">GO SHOPPING<i style="color: white;font-size:14px;margin-left: 10px;"
+                    <span
+                        style="font-size: 14px;font-weight: bold;text-transform: uppercase;line-height: 1em;letter-spacing: 2px;"><a
+                            href="#">GO SHOPPING<i style="color: white;font-size:14px;margin-left: 10px;"
                                 class="fas fa-long-arrow-alt-right"></i></a></span>
                 </div>
             </div>
             <!-- page-welcome -->
-            <!-- features-product -->
-            <div class="container-fluid">
-                
-                    <span>FEATURED PRODUCTS</span>
-                
+            <div class="wrapper-product">
+                <!-- features-product -->
+                <div class="container-fluid featured-products">
+                    <div class="row featured-product-title">
+                        <p>FEATURED PRODUCTS</p>
+                        <span>BEST FROM THE BEST !</span>
+                    </div>
+                    <div class="row featured-product-list">
+                        <div class="col-xl-3 col-md-5 mb-3 mt-3 featured-product">
+                            <img src="assests/hoddie.jpg" alt="">
+                            <div class="infor-product">
+                                <div><span>Hoodies</span><br>
+                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
+                                </div>
+                                <p style="margin-top: -30px;">$45.00</p>
+                                <span><a href="">Add to cart</a></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-5 mb-3 mt-3 featured-product">
+                            <img src="assests/glasses.jpg" alt="">
+                            <div class="infor-product">
+                                <div><span>Hoodies</span><br>
+                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
+                                </div>
+                                <p style="margin-top: -30px;">$45.00</p>
+                                <span><a href="">Add to cart</a></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-5 mb-3 mt-3 featured-product">
+                            <img src="assests/cap.jpg" alt="">
+                            <span class="sale-product">SALE</span>
+                            <div class="infor-product">
+                                <div><span>Hoodies</span><br>
+                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
+                                </div>
+                                <p style="margin-top: -30px;"><span style="text-decoration: line-through;color: rgba(0,0,0,0.7);">18.00$</span> $45.00</p>
+                                <span><a href="">Add to cart</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row featured-products-information">
+                        <div class="col-xl-6 col-md-12 information-features">
+                            Sed pellentesque lectus fringilla, varius metus in, malesuada est. Donec nisl nunc, egestas at <br> molestie sit amet,eleifend et dui. Vivamus fringilla faucibus scelerisque. Nam convallis risus <br> risus, eu sagittis eros luctus id.
+                        </div>  
+                        <div class="row featured-products-seemore mb-5">
+                            <div class="col-xl-3 col-lg-0"></div>
+                            <div class="col-xl-3 col-md-6">
+                                <a href=""><button class="btn btn-secondary btn-lg mt-5 pl-5 pr-5 pt-3 pb-3  btn-seemore">SEE MORE FEATURES</button></a>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                            <button class="btn btn-secondary btn-lg mt-5 pl-5 pr-5 btn-seemore">CHECK ALL DESIGNS!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- features-product -->
             </div>
-            <!-- features-product -->
+
         </div>
 
     </div>
@@ -114,6 +167,7 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
 <script>
     // type-animation
     var typed = new Typed('#shop-boutique', {
@@ -126,6 +180,17 @@
         backDelay: 1000, // Default value
     });
     //
+    // jquery
+    $(document).ready(function(){
+        $(".infor-product").mouseover(function(){
+           $(".infor-product a").animate({top: "80%"});
+        })
+        $(".infor-product").mouseleave(function () {
+            $(".infor-product a").animate({ top: "110%" });
+        })
+    })
+   
+    // 
 </script>
 
 </html>
