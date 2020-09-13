@@ -362,29 +362,76 @@ footer .list-footer {
     margin-top: 5px;
     color: #7f7f7f !important;
 }
+
 /* recent-product */
-.list-footer-recent-products{
+
+.list-footer-recent-products {
     margin-top: 20px;
 }
-.list-footer-recent-products ul li{
+
+.list-footer-recent-products ul li {
     display: flex;
     margin-top: 15px;
     padding: 15px 0px 0px 0px;
 }
-.list-footer-recent-products a{
+
+.list-footer-recent-products a {
     color: #222222;
 }
-.list-footer-recent-products ul li span{
+
+.list-footer-recent-products ul li span {
     color: #7f7f7f;
 }
-.list-footer-recent-products ul li img{
+
+.list-footer-recent-products ul li img {
     max-width: 20%;
     margin-right: 5%;
 }
-.why-us ul li{
+
+.why-us ul li {
     margin-top: 20px;
 }
+
 /* CATEGORIES */
+
+#myBtn {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #777777;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    
+    /* Increase font size */
+    transition: .10s ease;
+    opacity: 0.3;
+}
+
+#myBtn:hover {
+    background-color: #007BFF;
+    /* Add a dark-grey background on hover */
+    opacity: 1;
+}
 
 /* reponsive */
 
