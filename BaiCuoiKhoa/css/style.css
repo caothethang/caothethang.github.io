@@ -11,7 +11,7 @@
 }
 
 .main {
-    height: 5000px;
+    /* height: 5000px; */
     background: url('../assests/bg-pages.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -96,14 +96,15 @@ header {
 /* wrapper-product */
 
 .wrapper-product {
-    padding: 30px 0px 40px;
+    padding: 30px 0px 100px;
     margin-top: -30px;
+    background-color: white;
 }
 
 /* Featured product */
 
 .featured-products {
-    background-color: white;
+    background-color: lavender;
 }
 
 .featured-product-title {
@@ -113,6 +114,7 @@ header {
     text-align: center;
     line-height: 10px;
     padding-bottom: 20px;
+    background-color: white;
 }
 
 .featured-product-title p {
@@ -131,6 +133,7 @@ header {
 .featured-product-list {
     justify-content: space-around;
     padding: 30px 0 40px;
+    background-color: white;
 }
 
 .featured-product-list .featured-product {
@@ -140,6 +143,11 @@ header {
     width: 100%;
     transition: .5s ease;
     cursor: pointer;
+}
+
+.featured-product img {
+    max-width: 100%;
+    height: auto;
 }
 
 .featured-product:hover img {
@@ -188,6 +196,10 @@ header {
     top: 100%;
 }
 
+.recent-product .infor-product a {
+    left: 36%;
+}
+
 .infor-product a:hover {
     color: white;
     background: #000;
@@ -205,7 +217,7 @@ header {
     margin-left: 15px;
 }
 
-.btn-seemore{
+.btn-seemore {
     box-shadow: 0px 12px 39px 0px rgba(0, 0, 0, 0.16);
     color: white !important;
     padding: 18px;
@@ -214,7 +226,8 @@ header {
     border: #818a91;
     font-weight: bold;
 }
-.btn-seemore:hover{
+
+.btn-seemore:hover {
     text-decoration: underline;
     background: #007BFF !important;
 }
@@ -233,6 +246,145 @@ header {
     font-weight: 400;
     letter-spacing: 0px;
 }
+
+/* highlight-features */
+
+.highlight-feature {
+    display: flex;
+}
+
+.highlight-feature i {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+/* client-say */
+
+.client-say-infor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding: 15px 45px;
+    transition: .5s ease;
+}
+
+.client-say-infor p:first-child {
+    color: #777777 !important;
+}
+
+.client-say-infor:hover {
+    border-bottom: 5px solid black;
+    box-shadow: 1px 8px 44px -4px rgba(0, 0, 0, 0.45);
+}
+
+.client-say-infor span {
+    font-size: xx-small;
+    margin-top: -10px;
+    letter-spacing: 7px;
+}
+
+/* new-season-notify */
+
+.new-season-notify .row {
+    display: flex;
+}
+
+.new-season-notify {
+    height: 250px;
+    margin-top: 0 !important;
+    padding-bottom: 50px;
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.new-season-notify div {
+    padding-top: 60px !important;
+}
+
+.new-season-notify h2 {
+    color: white;
+}
+
+.new-season-notify span a {
+    color: white;
+    padding: 20px;
+    border: 3px solid white;
+    transition: .5s ease;
+    font-weight: bold;
+}
+
+.new-season-notify span a:hover {
+    background-color: white;
+    color: purple !important;
+}
+
+.new-season-notify span a:hover i {
+    color: purple !important;
+}
+
+/* footer */
+
+footer {
+    background: #f4f4f4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer .list-footer {
+    margin-top: 20px;
+}
+
+.list-footer ul {
+    list-style: none;
+}
+
+.list-footer ul li {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.list-footer-recent {
+    margin-top: 20px;
+}
+
+.list-footer-recent ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.list-footer-recent ul li a {
+    color: #222222;
+}
+
+.list-footer-recent ul li span {
+    margin-top: 5px;
+    color: #7f7f7f !important;
+}
+/* recent-product */
+.list-footer-recent-products{
+    margin-top: 20px;
+}
+.list-footer-recent-products ul li{
+    display: flex;
+    margin-top: 15px;
+    padding: 15px 0px 0px 0px;
+}
+.list-footer-recent-products a{
+    color: #222222;
+}
+.list-footer-recent-products ul li span{
+    color: #7f7f7f;
+}
+.list-footer-recent-products ul li img{
+    max-width: 20%;
+    margin-right: 5%;
+}
+.why-us ul li{
+    margin-top: 20px;
+}
+/* CATEGORIES */
 
 /* reponsive */
 
@@ -254,5 +406,19 @@ header {
     }
     #welcome-shop {
         font-size: 36px !important;
+    }
+    .highlight-feature {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .highlight-feature-infor {
+        margin-top: 15px;
+    }
+}
+
+@media all and (max-width:1200px) {
+    .new-season-notify div {
+        padding-top: 30px !important;
     }
 }
