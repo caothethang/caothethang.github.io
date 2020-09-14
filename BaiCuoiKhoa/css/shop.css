@@ -393,6 +393,7 @@ footer .list-footer {
 }
 
 /* CATEGORIES */
+
 /* button */
 
 #myBtn {
@@ -422,7 +423,6 @@ footer .list-footer {
     /* Some padding */
     border-radius: 50%;
     /* Rounded corners */
-    
     /* Increase font size */
     transition: .10s ease;
     opacity: 0.3;
