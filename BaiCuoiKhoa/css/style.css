@@ -192,8 +192,9 @@ header {
     font-weight: bold;
     transition: .9s ease;
     position: absolute;
-    left: 42%;
-    top: 100%;
+    left: 41%;
+    top: 80%;
+    
 }
 
 .recent-product .infor-product a {
