@@ -9,14 +9,10 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/shop.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
-
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-
     <div class="wrapper">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
         <!-- header -->
@@ -31,10 +27,10 @@
                 <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto small">
                         <li class="nav-item mr-5">
-                            <a class="nav-link text-primary" href="index.html">HOME </a>
+                            <a class="nav-link text-primary" href="#">HOME </a>
                         </li>
                         <li class="nav-item mr-5">
-                            <a class="nav-link" href="#">SHOP</a>
+                            <a class="nav-link" href="shop.html">SHOP</a>
                         </li>
                         <li class="nav-item dropdown mr-5">
                             <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
@@ -80,130 +76,34 @@
         </header>
         <!-- header -->
         <div class="container-fluid main">
-            <div class="row">
-                <div class="featured-product-title">
-                    <p>SHOP</p>
+            <!-- page-welcome -->
+            <div class="container-fluid type-animation">
+                <div class="container">
+                    <span id="welcome-shop">WELCOME IN OUR <span id="shop-boutique"></span></span>
+                    <div class="container container-sm" style="margin: auto;margin-top: -80px;"><span
+                            style="font-size:23px;color:rgba(255,255,255,0.8);font-weight: 400;letter-spacing: 0.2px;">Customers
+                            don't just want to
+                            shop: they want to feel that the brand understands
+                            them.</span></div>
                 </div>
-
-            </div>
-            <div class="container-fluid title-shop">
-                <div class="row title-list">
-                    <div class="col-xl-9">
-                        <h4 style="margin-left: 50px;">PRODUCT CATEGORIES</h4>
-                    </div>
-
-                    <div class="col-xl-3" style="padding-left: 80px;">
-                        <form action="">
-                            <label for="clothes">Sắp xếp theo:</label>
-                            <select name="clothes" id="clothes">
-                                <option value="volvo">Giá tăng dần</option>
-                                <option value="saab">Giá giảm dần</option>
-                                <option value="opel">Ngẫu nhiên</option>
-                                <option value="audi">Chất lượng</option>
-                            </select>
-                    </div>
+                <div class="btn-go-shopping">
+                    <span
+                        style="font-size: 14px;font-weight: bold;text-transform: uppercase;line-height: 1em;letter-spacing: 2px;"><a
+                            href="#">GO SHOPPING<i style="color: white;font-size:14px;margin-left: 10px;"
+                                class="fas fa-long-arrow-alt-right"></i></a></span>
                 </div>
             </div>
-            <div class="row pl-5 pr-5 pt-1">
-                <div class="col-xl-2 col-lg-2 col-md-12 mb-5">
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href=""> Category 1</a>
-                            <span class="badge badge-primary badge-pill">14</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href="">Category 2</a>
-                            <span class="badge badge-primary badge-pill">2</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href="">Category 3</a>
-                            <span class="badge badge-primary badge-pill">1</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href="">Category 4</a>
-                            <span class="badge badge-primary badge-pill">1</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href="">Category 5</a>
-                            <span class="badge badge-primary badge-pill">1</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href="">Category 6</a>
-                            <span class="badge badge-primary badge-pill">1</span>
-                        </li>
-                    </ul>
-                    <div class="feature-shop">
-                        <div style="display: flex;margin-top: 20px;">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search ..."
-                                aria-label="Search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </div>
-                        <div class="ranger-price" style="width: 100%;">
-                            <h5>Filter By Price</h5>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">$</span>
-                                </div>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                            </div>
-
-                            <div class="input-group">
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">$</span>
-                                </div>
-                            </div>
-                            <input class="btn btn-primary mt-3 w-50" type="submit" value="Submit">
-                        </div>
-                        <div class="sells-product">
-                            <h4>Best Selling Product</h4>
-                            <ul>
-                                <li>
-                                    <img src="assests/hoddie.jpg" alt="">
-                                    <div>
-                                        <h6><a href="">HOODIE WITH ZIPPER</a></h6>
-                                        <span>$45.00</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="assests/cap.jpg" alt="" style="max-width: 30%;">
-                                    <div>
-                                        <h6><a href="">CAP</a></h6>
-                                        <span>$45.00</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="assests/glasses.jpg" alt="" style="max-width: 30%;">
-                                    <div>
-                                        <h6><a href="">SUNGLASSES</a></h6>
-                                        <span>$45.00</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="assests/t-shirt.jpg" alt="" style="max-width: 30%;">
-                                    <div>
-                                        <h6><a href="">V-NECK T-SHIRT</a></h6>
-                                        <span>$45.00</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="assests/hoddie.jpg" alt="" style="max-width: 30%;">
-                                    <div>
-                                        <h6><a href="">HOODIE WITH ZIPPER</a></h6>
-                                        <span>$45.00</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
+            <!-- page-welcome -->
+            <div class="wrapper-product">
+                <!-- features-product -->
+                <div class="container-fluid featured-products">
+                    <div class="row featured-product-title">
+                        <p>FEATURED PRODUCTS</p>
+                        <span>BEST FROM THE BEST !</span>
                     </div>
-                </div>
-
-
-                <div class="col-xl-10 col-lg-10 col-md-12">
-                    <div class="row justify-content-around">
-                        <div class="col-xl-3 col-lg-3 col-md-6  featured-product recent-product">
-                            <img src="assests/cap.jpg" alt="">
+                    <div class="row featured-product-list">
+                        <div class="col-xl-3 col-md-3 col-sm-3 mb-3 mt-3 featured-product">
+                            <img src="../assests/hoddie.jpg" alt="">
                             <div class="infor-product">
                                 <div><span>Hoodies</span><br>
                                     <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
@@ -212,8 +112,8 @@
                                 <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6  featured-product recent-product">
-                            <img src="assests/glasses.jpg" alt="">
+                        <div class="col-xl-3 col-md-3 col-sm-3 mb-3 mt-3 featured-product">
+                            <img src="../assests/glasses.jpg" alt="">
                             <div class="infor-product">
                                 <div><span>Hoodies</span><br>
                                     <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
@@ -222,31 +122,51 @@
                                 <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6  featured-product recent-product">
-                            <img src="assests/t-shirt.jpg" alt="">
-                            <div class="infor-product">
-                                <div><span>Hoodies</span><br>
-                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
-                                </div>
-                                <p style="margin-top: -30px;">$45.00</p>
-                                <span><a href="">Add to cart</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-around mt-5">
-                        <div class="col-xl-3 col-lg-3 col-md-6  featured-product recent-product">
-                            <img src="assests/t-shirt.jpg" alt="">
+                        <div class="col-xl-3 col-md-3 col-sm-3 mb-3 mt-3 featured-product">
+                            <img src="../assests/cap.jpg" alt="">
                             <span class="sale-product">SALE</span>
                             <div class="infor-product">
                                 <div><span>Hoodies</span><br>
                                     <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
                                 </div>
-                                <p style="margin-top: -30px;">$45.00</p>
+                                <p style="margin-top: -30px;"><span
+                                        style="text-decoration: line-through;color: rgba(0,0,0,0.7);">18.00$</span>
+                                    $45.00</p>
                                 <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6  featured-product recent-product">
-                            <img src="assests/cap.jpg" alt="">
+                    </div>
+                    <div class="row featured-products-information">
+                        <div class="col-xl-6 col-md-12 information-features">
+                            Sed pellentesque lectus fringilla, varius metus in, malesuada est. Donec nisl nunc, egestas
+                            at <br> molestie sit amet,eleifend et dui. Vivamus fringilla faucibus scelerisque. Nam
+                            convallis risus <br> risus, eu sagittis eros luctus id.
+                        </div>
+                        <div class="row featured-products-seemore mb-5">
+                            <div class="col-xl-3 col-lg-0"></div>
+                            <div class="col-xl-3 col-md-6">
+                                <a href=""><button
+                                        class="btn btn-secondary btn-lg mt-5 pl-5 pr-5 pt-3 pb-3  btn-seemore">SEE MORE
+                                        FEATURES</button></a>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <button class="btn btn-secondary btn-lg mt-5 pl-5 pr-5 btn-seemore">CHECK ALL
+                                    DESIGNS!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- features-product -->
+                <!-- recent product -->
+                <div class="container-fluid featured-products recent-products">
+                    <div class="row featured-product-title recent-product-title">
+                        <p>RECENT PRODUCTS</p>
+                        <span>OUR HOT ARRIVALS !</span>
+                    </div>
+                    <!-- recent list -->
+                    <div class="row featured-product-list">
+                        <div class="col-xl-2 col-md-2 col-sm-2 mb-3 mt-3 featured-product recent-product">
+                            <img src="../assests/hoddie.jpg" alt="">
                             <div class="infor-product">
                                 <div><span>Hoodies</span><br>
                                     <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
@@ -255,122 +175,176 @@
                                 <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6  featured-product recent-product">
-                            <img src="assests/hoddie.jpg" alt="">
+                        <div class="col-xl-2 col-md-2 col-sm-2 mb-3 mt-3 featured-product recent-product">
+                            <img src="../assests/glasses.jpg" alt="">
+                            <div class="infor-product">
+                                <div><span>Hoodies</span><br>
+                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
+                                </div>
+                                <p style="margin-top: -30px;">$45.00</p>
+                                <span><a href="">Add to cart</a></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-2 col-sm-2 mb-3 mt-3 featured-product recent-product">
+                            <img src="../assests/cap.jpg" alt="">
                             <span class="sale-product">SALE</span>
                             <div class="infor-product">
                                 <div><span>Hoodies</span><br>
                                     <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
                                 </div>
-                                <p style="margin-top: -30px;">$45.00</p>
+                                <p style="margin-top: -30px;"><span
+                                        style="text-decoration: line-through;color: rgba(0,0,0,0.7);">18.00$</span>
+                                    $45.00</p>
                                 <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-around mt-5">
-                        <div class="col-xl-3 col-lg-3 col-md-6  featured-product recent-product">
-                            <img src="assests/cap.jpg" alt="">
+                        <div class="col-xl-2 col-md-2 col-sm-2 mb-3 mt-3 featured-product recent-product">
+                            <img src="../assests/cap.jpg" alt="">
                             <span class="sale-product">SALE</span>
                             <div class="infor-product">
                                 <div><span>Hoodies</span><br>
                                     <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
                                 </div>
-                                <p style="margin-top: -30px;">$45.00</p>
-                                <span><a href="">Add to cart</a></span>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6  featured-product recent-product">
-                            <img src="assests/glasses.jpg" alt="">
-                            <div class="infor-product">
-                                <div><span>Hoodies</span><br>
-                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
-                                </div>
-                                <p style="margin-top: -30px;">$45.00</p>
-                                <span><a href="">Add to cart</a></span>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6  featured-product recent-product">
-                            <img src="assests/t-shirt.jpg" alt="">
-                            <div class="infor-product">
-                                <div><span>Hoodies</span><br>
-                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
-                                </div>
-                                <p style="margin-top: -30px;">$45.00</p>
+                                <p style="margin-top: -30px;"><span
+                                        style="text-decoration: line-through;color: rgba(0,0,0,0.7);">18.00$</span>
+                                    $45.00</p>
                                 <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="featured-product-title">
-                    <p>NEWS</p>
-                </div>
-                <div class="row news-slide">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item card">
-                            <img src="assests/cap.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">News title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Read news</a>
+                    <div class="row featured-product-list">
+                        <div class="col-xl-2 col-md-2 col-sm-2 mb-3 mt-3 featured-product recent-product">
+                            <img src="../assests/hoddie.jpg" alt="">
+                            <div class="infor-product">
+                                <div><span>Hoodies</span><br>
+                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
+                                </div>
+                                <p style="margin-top: -30px;">$45.00</p>
+                                <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
-                        <div class="item card">
-                            <img src="assests/cap.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">News title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Read news</a>
+                        <div class="col-xl-2 col-md-2 col-sm-2 mb-3 mt-3 featured-product recent-product">
+                            <img src="../assests/glasses.jpg" alt="">
+                            <div class="infor-product">
+                                <div><span>Hoodies</span><br>
+                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
+                                </div>
+                                <p style="margin-top: -30px;">$45.00</p>
+                                <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
-                        <div class="item card">
-                            <img src="assests/cap.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">News title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Read news</a>
+                        <div class="col-xl-2 col-md-2 col-sm-2 mb-3 mt-3 featured-product recent-product">
+                            <img src="../assests/cap.jpg" alt="">
+                            <span class="sale-product">SALE</span>
+                            <div class="infor-product">
+                                <div><span>Hoodies</span><br>
+                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
+                                </div>
+                                <p style="margin-top: -30px;"><span
+                                        style="text-decoration: line-through;color: rgba(0,0,0,0.7);">18.00$</span>
+                                    $45.00</p>
+                                <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
-                        <div class="item card">
-                            <img src="assests/cap.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">News title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Read news</a>
+                        <div class="col-xl-2 col-md-2 col-sm-2 mb-3 mt-3 featured-product recent-product">
+                            <img src="../assests/cap.jpg" alt="">
+                            <span class="sale-product">SALE</span>
+                            <div class="infor-product">
+                                <div><span>Hoodies</span><br>
+                                    <span style="letter-spacing: 2px;">HOODIES WITH ZIPPER</span>
+                                </div>
+                                <p style="margin-top: -30px;"><span
+                                        style="text-decoration: line-through;color: rgba(0,0,0,0.7);">18.00$</span>
+                                    $45.00</p>
+                                <span><a href="">Add to cart</a></span>
                             </div>
                         </div>
-                        <div class="item card">
-                            <img src="assests/cap.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">News title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Read news</a>
-                            </div>
+                    </div>
+                    <!-- recent list -->
 
-                        </div>
-                        <div class="item card">
-                            <img src="assests/cap.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">News title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Read news</a>
+                </div>
+                <!-- recent product -->
+                <!-- hightlight features -->
+                <div class="container-fluid highlight-features">
+                    <div class="row featured-product-title highlight-features-title">
+                        <p>HIGHLIGHTED FEATURES</p>
+                        <span>MAKE YOUR WORK EASIER AND FASTER!</span>
+                    </div>
+                    <div class="row featured-product-list">
+                        <div class="col-xl-3 col-lg-4 col-md-8 highlight-feature">
+                            <i class="fab fa-dropbox"></i>
+                            <div class="highlight-feature-infor">
+                                <p>FREE WORLDWIDE SHIPPING</p>
+                                <span>Aliquam sit amet nibh ultrices, scelerisque lorem eget, posuere urna.</span>
                             </div>
                         </div>
+                        <div class="col-xl-3 col-lg-4 col-md-8 highlight-feature ">
+                            <i class="far fa-gem"></i>
+                            <div class="highlight-feature-infor">
+                                <p>FREE WORLDWIDE SHIPPING</p>
+                                <span>Aliquam sit amet nibh ultrices, scelerisque lorem eget, posuere urna.</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-8 highlight-feature">
+                            <i class="far fa-address-card"></i>
+                            <div class="highlight-feature-infor">
+                                <p>FREE WORLDWIDE SHIPPING</p>
+                                <span>Aliquam sit amet nibh ultrices, scelerisque lorem eget, posuere urna.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hightlight features -->
+                <!-- what client-says -->
+                <div class="container-fluid client-say">
+                    <div class="row featured-product-title client-say-title">
+                        <p>WHAT CLIENTS SAY</p>
+                        <span>A GREAT PLACE TO SHOW BEST OPINIONS</span>
+                    </div>
+
+                    <div class="row featured-product-list client-say-list">
+
+                        <div class="col-xl-2 col-lg-0"></div>
+                        <div class="col-xl-2 col-lg-4 col-md-8 client-say-infor">
+                            <p>"I would also like to say thank you to all your staff. Rife WP Theme has completely
+                                fulfill our expectations."</p>
+                            <p style="margin-top: 25px;">DANA BAILEY</p>
+                            <span>DESIGNER</span>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-md-8  client-say-infor ">
+                            <p>"I don't always clop, but when I do, it's because of Rife. Thank you so much for your
+                                help. I use Rife often."</p>
+                            <p style="margin-top: 25px;">DAVID LARSEN</p>
+                            <span>DESIGNER</span>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-md-8  client-say-infor">
+                            <p>"I would gladly pay over 600 dollars for Rife. Rife was worth a fortune to my company.
+                                Rife is the great webtool."</p>
+                            <p style="margin-top: 25px;">MARY WELLS</p>
+                            <span>DESIGNER</span>
+                        </div>
+                        <div class="col-xl-2 col-lg-0"></div>
                     </div>
                 </div>
             </div>
-
+            <!-- wrapper-products -->
+            <!-- new season notify -->
+            <div class="container-fluid type-animation new-season-notify">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-0"></div>
+                    <div class="col-xl-4 col-md-12">
+                        <h2>NEW SEASON SALE! UP TO 70%</h2>
+                    </div>
+                    <div class="col-xl-4 col-md-12">
+                        <span><a href="">GO SHOPPING <i style="color: white;font-size:14px;margin-left: 10px;"
+                                    class="fas fa-long-arrow-alt-right"></i> </a></span>
+                    </div>
+                    <div class="col-xl-2 col-lg-0"></div>
+                </div>
+            </div>
+            <!-- new season notify -->
 
         </div>
-
-        <!-- features-product -->
-
         <!-- footer -->
         <footer>
             <div class="container-fluid">
@@ -413,21 +387,21 @@
                         <div class="list-footer-recent-products">
                             <ul>
                                 <li>
-                                    <img src="assests/footer-img.jpg" alt="">
+                                    <img src="../assests/footer-img.jpg" alt="">
                                     <div>
                                         <a href=""><strong>WORDPRESS PENNANT</strong></a>
                                         <span>$11.05</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="assests/footer-img.jpg" alt="">
+                                    <img src="../assests/footer-img.jpg" alt="">
                                     <div>
                                         <a href=""><strong>WORDPRESS PENNANT</strong></a>
                                         <span>$11.05</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="assests/footer-img.jpg" alt="">
+                                    <img src="../assests/footer-img.jpg" alt="">
                                     <div>
                                         <a href=""><strong>WORDPRESS PENNANT</strong></a>
                                         <span>$11.05</span>
@@ -452,6 +426,8 @@
         </footer>
 
     </div>
+
+
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -464,8 +440,29 @@
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <script src="js/jquery-3.5.1.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
 <script>
+    // type-animation
+    var typed = new Typed('#shop-boutique', {
+        strings: ['SHOP', 'BOUTIQUE'],
+        loop: true,
+        fadeOutDelay: 500,
+        typeSpeed: 50,
+        startDelay: 1000,
+        backSpeed: 100,
+        backDelay: 1000, // Default value
+    });
+    //
+    // jquery
+    // $(document).ready(function () {
+    //     $(".infor-product").mouseover(function () {
+    //         $(".infor-product a").animate({ top: "80%" });
+    //     })
+    //     $(".infor-product").mouseleave(function () {
+    //         $(".infor-product a").animate({ top: "110%" });
+    //     })
+    // })
+
+    // 
     //Get the button:
     mybutton = document.getElementById("myBtn");
 
@@ -484,40 +481,7 @@
     function topFunction() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-
-
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                loop: true
-            },
-            600: {
-                items: 3,
-                loop: true
-            },
-            1000: {
-                items: 3,
-                loop: true
-            }
-        }
-    });
-    $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [1000])
-    })
-    $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay')
-    })
-
+    }   
 </script>
 
 </html>
