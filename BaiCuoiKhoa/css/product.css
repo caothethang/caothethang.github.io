@@ -1,4 +1,257 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header {
+    height: auto;
+    opacity: 1;
+}
+
+.dropdown-menu {
+    font-size: 14px;
+    border: none;
+}
+.login-register{
+    color: #007BFF !important;
+    font-size: 14px !important;
+}
+.nav-link{
+    font-size: 14px !important;
+}
+.navbar-collapse ul li a:hover {
+    color: #8742B6 !important;
+}
+
+.collapse ul {}
+
+.navbar-brand {
+    font-size: 30px !important;
+}
+
+/* main */
+
+.featured-product-title {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.featured-product-title p {
+    letter-spacing: 4px;
+    font-size: 46px;
+    font-weight: 300;
+}
+
+/* main */
+
+.image-product img {
+    width: 100%;
+}
+
+.detail-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detail-product .order {
+    height: 42px;
+    width: 100%;
+    display: flex;
+}
+
+.detail-product .order input {
+    width: 20%;
+    text-align: center;
+}
+
+.detail-product .order button {
+    width: 60%;
+    background-color: black !important;
+}
+.detail-product .order button:hover{
+    background-color: blueviolet !important;
+}
+/* size */
+.size-product{
+    position: relative;
+}
+.size-product span{
+    position: absolute;
+    left: 30%;
+}
+/* footer */
+
+footer {
+    background: #f4f4f4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 150px;
+}
+
+footer .list-footer {
+    margin-top: 20px;
+}
+
+.list-footer ul {
+    list-style: none;
+}
+
+.list-footer ul li {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.list-footer-recent {
+    margin-top: 20px;
+}
+
+.list-footer-recent ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.list-footer-recent ul li a {
+    color: #222222;
+}
+
+.list-footer-recent ul li span {
+    margin-top: 5px;
+    color: #7f7f7f !important;
+}
+
+/* recent-product */
+
+.list-footer-recent-products {
+    margin-top: 20px;
+}
+
+.list-footer-recent-products ul li {
+    display: flex;
+    margin-top: 15px;
+    padding: 15px 0px 0px 0px;
+}
+
+.list-footer-recent-products a {
+    color: #222222;
+}
+
+.list-footer-recent-products ul li span {
+    color: #7f7f7f;
+}
+
+.list-footer-recent-products ul li img {
+    max-width: 20%;
+    margin-right: 5%;
+}
+
+.why-us ul li {
+    margin-top: 20px;
+}
+
+/* CATEGORIES */
+
+/* button */
+
+#myBtn {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #777777;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    /* Increase font size */
+    transition: .10s ease;
+    opacity: 0.3;
+}
+
+#myBtn:hover {
+    background-color: #007BFF;
+    /* Add a dark-grey background on hover */
+    opacity: 1;
+}
+
+/* reponsive */
+
+@media all and (max-width:992px) {
+    .form-control {
+        width: 80% !important;
+    }
+    .form-inline {
+        width: 90% !important;
+        margin: auto !important;
+    }
+    .dropdown-menu {
+        background-color: white !important;
+        text-align: center;
+    }
+    .nav-item {
+        text-align: center !important;
+        margin-right: 0 !important;
+    }
+    #welcome-shop {
+        font-size: 36px !important;
+    }
+    .highlight-feature {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .highlight-feature-infor {
+        margin-top: 15px;
+    }
+}
+
+@media all and (max-width:1200px) {
+    .new-season-notify div {
+        padding-top: 30px !important;
+    }
 }
