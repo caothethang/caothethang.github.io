@@ -154,12 +154,12 @@ header {
     border: 1px solid #7f7f7f;
     /* border-right: none; */
 }
+
 .feature-shop button {
     width: 20%;
     background: #2196F3;
     color: white;
     border-left: none;
-    
     border: none;
     /* Prevent double borders */
     cursor: pointer;
@@ -196,27 +196,31 @@ header {
     margin-top: 50px;
 }
 
-
 /* news-slide */
 
-.news-slide{
+.news-slide {
     width: 80%;
     margin: auto;
     margin-bottom: 100px;
 }
-.item img{
+
+.item img {
     width: 100%;
     height: 30%;
     margin: auto;
 }
-.item span{
+
+.item span {
     font-weight: bold;
 }
-.news-title{
+
+.news-title {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 /* news-slide */
+
 /* footer */
 
 footer {
@@ -333,6 +337,27 @@ footer .list-footer {
 
 /* reponsive */
 
+@media all and (max-width: 1980px) {
+    .nav-item {
+        padding-left: 15px !important;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .nav-item {
+        padding-left: 3px !important;
+    }
+}
+
+@media all and (max-width:1200px) {
+    .new-season-notify div {
+        padding-top: 30px !important;
+    }
+    .login-logout {
+        padding-left: 0px !important;
+    }
+}
+
 @media all and (max-width:992px) {
     .form-control {
         width: 80% !important;
@@ -353,10 +378,7 @@ footer .list-footer {
         max-width: 50%;
         margin-right: 3%;
     }
-}
-
-@media all and (max-width:1200px) {
-    .new-season-notify div {
-        padding-top: 30px !important;
+    .login-logout {
+        padding-left: 16px !important;
     }
 }

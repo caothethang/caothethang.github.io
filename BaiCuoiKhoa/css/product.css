@@ -31,13 +31,15 @@ header {
     font-size: 14px;
     border: none;
 }
-.login-register{
+
+.login-register {
     color: #007BFF !important;
+}
+
+.nav-link {
     font-size: 14px !important;
 }
-.nav-link{
-    font-size: 14px !important;
-}
+
 .navbar-collapse ul li a:hover {
     color: #8742B6 !important;
 }
@@ -93,17 +95,22 @@ header {
     width: 60%;
     background-color: black !important;
 }
-.detail-product .order button:hover{
+
+.detail-product .order button:hover {
     background-color: blueviolet !important;
 }
+
 /* size */
-.size-product{
+
+.size-product {
     position: relative;
 }
-.size-product span{
+
+.size-product span {
     position: absolute;
     left: 30%;
 }
+
 /* footer */
 
 footer {
@@ -219,6 +226,27 @@ footer .list-footer {
 
 /* reponsive */
 
+@media all and (max-width: 1980px) {
+    .nav-item {
+        padding-left: 15px !important;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .nav-item {
+        padding-left: 3px !important;
+    }
+}
+
+@media all and (max-width:1200px) {
+    .new-season-notify div {
+        padding-top: 30px !important;
+    }
+    .login-logout {
+        padding-left: 0px !important;
+    }
+}
+
 @media all and (max-width:992px) {
     .form-control {
         width: 80% !important;
@@ -246,10 +274,7 @@ footer .list-footer {
     .highlight-feature-infor {
         margin-top: 15px;
     }
-}
-
-@media all and (max-width:1200px) {
-    .new-season-notify div {
-        padding-top: 30px !important;
+    .login-logout {
+        padding-left: 16px !important;
     }
 }
