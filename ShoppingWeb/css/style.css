@@ -15,10 +15,12 @@ ul {
 .wrapper {
     position: relative;
 }
-#hidden-cover{
+
+#hidden-cover {
     width: 100%;
     height: 100%;
 }
+
 .menu-hidden {
     position: absolute;
     z-index: 1;
@@ -33,7 +35,7 @@ ul {
     left: 100%;
     position: absolute;
     width: 70%;
-    height:100%;
+    height: 100%;
     background-color: black;
     background-attachment: fixed;
     z-index: 1;
@@ -91,6 +93,10 @@ input[type=text]:focus {
     outline: none;
 }
 
+button[type=submit]:focus {
+    outline: none !important;
+}
+
 .search-input input {
     width: 95%;
     padding: 0px 50px 0px 15px !important;
@@ -104,6 +110,11 @@ input[type=text]:focus {
     line-height: 40px;
     border-left: none;
     color: #f68e2e;
+}
+
+.search-input button {
+    border: none;
+    background-color: white;
 }
 
 /* cart */
@@ -231,15 +242,114 @@ input[type=text]:focus {
 
 /* image-slider */
 
+/* new-products */
 
+/* new-title */
+
+.new-title h2::before {
+    border: 2px double #ebebeb;
+    border-left: 2px double #fff;
+    border-right: 2px double #fff;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 7px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+
+.new-title h2 {
+    font-size: 18px;
+    line-height: 19px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 15px !important;
+    position: relative;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.new-product {
+    padding: 20px !important;
+}
+
+.new-product-detail {
+    background-color: #f7f7f7;
+}
+
+.new-product:hover .infor {
+    cursor: pointer;
+    border: 1px solid #f68e2e !important;
+}
+
+.new-product:hover .new-product-detail {
+    background-color: #f68e2e;
+    transition: .5s ease-in-out;
+}
+
+.new-product:hover .new-product-detail a {
+    color: white !important;
+    transition: .8s ease-in-out;
+}
+
+.sale {
+    top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 0;
+    color: #fff;
+    background: #e01212;
+    border-radius: 3px;
+    left: 10px;
+    padding: 5px 12px !important;
+}
+
+/* new-title*/
+
+/* new-product */
+
+/* room-type */
+
+.room-type {
+    z-index: 0;
+}
+
+.room-type .type-info {
+    overflow: hidden;
+}
+
+.room-type .type-info img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.name-type {
+    top: 3%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px !important;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.name-type span {
+    color: white;
+    font-size: smaller;
+}
+
+.name-type:hover {
+    opacity: 1 !important;
+}
 
 /* content */
 
 /* responsive */
 
-@media all and (min-width:1200px) {
-    
-}
+@media all and (min-width:1200px) {}
 
 @media all and (max-width: 992px) {
     .slogan {
@@ -287,14 +397,33 @@ input[type=text]:focus {
     .image-slider {
         height: 300px;
     }
-    .menu-hidden .list-group-left{
+    .menu-hidden .list-group-left {
         display: block !important;
     }
-    .menu-hidden .menu-type-right{
+    .menu-hidden .menu-type-right {
         display: block !important;
+    }
+    .name-type {
+        font-size: smaller;
+    }
+    .voucher-special-product .infor{
+        height: 150px !important;
+        width: fit-content;
+        margin: auto !important;
+    }
+    .voucher-special-product .infor div{
+        padding: 15px !important;
     }
 }
 
 @media all and (max-width: 768px) {
-    
+    .name-type {
+        font-size: smaller;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .name-type {
+        font-size: smaller;
+    }
 }
