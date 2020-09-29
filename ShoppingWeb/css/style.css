@@ -345,6 +345,55 @@ button[type=submit]:focus {
     opacity: 1 !important;
 }
 
+/* advertise */
+
+.ad-1 img {
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+.ad-2 img {
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+}
+
+.ad-1 .advertise-infor {
+    height: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    right: 10%;
+    top: 10%;
+}
+
+.advertise-infor a {
+    padding: 10px 20px !important;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.ad-2 .advertise-infor {
+    height: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    right: 10%;
+    top: 10%;
+}
+.ad-2 .advertise-infor a{
+    color: black ;
+    background-color: yellow;
+}
+
+/* advertise */
+
 /* content */
 
 /* responsive */
@@ -406,12 +455,12 @@ button[type=submit]:focus {
     .name-type {
         font-size: smaller;
     }
-    .voucher-special-product .infor{
+    .voucher-special-product .infor {
         height: 150px !important;
         width: fit-content;
         margin: auto !important;
     }
-    .voucher-special-product .infor div{
+    .voucher-special-product .infor div {
         padding: 15px !important;
     }
 }
@@ -419,6 +468,9 @@ button[type=submit]:focus {
 @media all and (max-width: 768px) {
     .name-type {
         font-size: smaller;
+    }
+    .advertise-infor{
+        font-size: smaller !important;
     }
 }
 
