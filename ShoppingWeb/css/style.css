@@ -246,6 +246,22 @@ button[type=submit]:focus {
 
 /* new-title */
 
+.new-products {
+    position: relative;
+}
+
+.owl-nav {
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    font-size: larger;
+}
+.new-products:hover .owl-nav{
+    display: flex;
+    transition: .5s ease;
+}
 .new-title h2::before {
     border: 2px double #ebebeb;
     border-left: 2px double #fff;
@@ -387,8 +403,9 @@ button[type=submit]:focus {
     right: 10%;
     top: 10%;
 }
-.ad-2 .advertise-infor a{
-    color: black ;
+
+.ad-2 .advertise-infor a {
+    color: black;
     background-color: yellow;
 }
 
@@ -469,7 +486,7 @@ button[type=submit]:focus {
     .name-type {
         font-size: smaller;
     }
-    .advertise-infor{
+    .advertise-infor {
         font-size: smaller !important;
     }
 }
