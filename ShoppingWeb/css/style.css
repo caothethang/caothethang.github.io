@@ -34,7 +34,7 @@ ul {
 .cover {
     left: 100%;
     position: absolute;
-    width: 70%;
+    width: 100%;
     height: 100%;
     background-color: black;
     background-attachment: fixed;
@@ -53,6 +53,16 @@ ul {
 .menu-hidden .menu-type-right li {
     border-bottom: 1px solid #eee;
 }
+
+/* search hidden */
+
+#search-input-hidden {
+    display: block;
+    z-index: 1 !important;
+    width: 100%;
+}
+
+/* search hidden */
 
 /* menu-hidden */
 
@@ -164,6 +174,7 @@ button[type=submit]:focus {
 
 .list-group-left li:hover a {
     color: #f68e2e !important;
+    transition: .5s ease;
 }
 
 .list-group-left li:hover {
@@ -232,12 +243,12 @@ button[type=submit]:focus {
 /* image-slider */
 
 .image-slider {
-    height: 100%;
+    /* height: 100%;
     width: 100%;
     background-image: url("../assests/slider_1.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
 }
 
 /* image-slider */
@@ -250,6 +261,8 @@ button[type=submit]:focus {
     position: relative;
 }
 
+/* next-pre btn */
+
 .owl-nav {
     display: none;
     justify-content: space-between;
@@ -258,10 +271,14 @@ button[type=submit]:focus {
     width: 100%;
     font-size: larger;
 }
-.new-products:hover .owl-nav{
+
+.new-products:hover .owl-nav {
     display: flex;
     transition: .5s ease;
 }
+
+/* next-pre btn */
+
 .new-title h2::before {
     border: 2px double #ebebeb;
     border-left: 2px double #fff;
@@ -298,6 +315,7 @@ button[type=submit]:focus {
 .new-product:hover .infor {
     cursor: pointer;
     border: 1px solid #f68e2e !important;
+    transition: .5s ease;
 }
 
 .new-product:hover .new-product-detail {
@@ -359,6 +377,7 @@ button[type=submit]:focus {
 
 .name-type:hover {
     opacity: 1 !important;
+    transition: .5s ease;
 }
 
 /* advertise */
@@ -413,6 +432,65 @@ button[type=submit]:focus {
 
 /* content */
 
+/* footer */
+
+.footer {
+    border-top: 1px #ebebeb dashed;
+}
+
+.footer-categories {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.footer-categories a {
+    color: white;
+}
+
+.footer-categories ul {}
+
+.footer-categories h4 {
+    color: white;
+    font-size: 16px !important;
+    position: relative;
+    padding-bottom: 20px !important;
+}
+
+.footer-categories h4::after {
+    content: '';
+    background-color: #abacad;
+    height: 3px;
+    width: 67px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: .4;
+}
+
+.footer-categories ul li {
+    padding: 10px !important;
+    padding-left: 0 !important;
+    font-size: 14px;
+}
+
+.contact-with-us span {
+    color: #f68e2e;
+}
+
+.contact-with-us {
+    font-size: 14px !important;
+}
+
+.submit-email input {
+    background-color: #1c1c1c;
+    border-radius: 0 !important;
+    border-right: 0 !important;
+}
+
+.submit-email input:focus {
+    background-color: #1c1c1c;
+}
+
 /* responsive */
 
 @media all and (min-width:1200px) {}
@@ -432,6 +510,9 @@ button[type=submit]:focus {
     }
     .search-input {
         display: none !important;
+    }
+    #search-input-hidden .search-input {
+        display: block !important;
     }
     .shop-contact-info {
         justify-content: flex-end !important;
@@ -480,6 +561,12 @@ button[type=submit]:focus {
     .voucher-special-product .infor div {
         padding: 15px !important;
     }
+    .contact-with-us {
+        margin-top: 45px !important;
+    }
+    .submit-email {
+        margin-top: 45px !important;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -489,10 +576,24 @@ button[type=submit]:focus {
     .advertise-infor {
         font-size: smaller !important;
     }
+    .contact-with-us {
+        margin-top: 45px !important;
+    }
+    .submit-email {
+        margin-top: 45px !important;
+    }
 }
 
 @media all and (max-width: 576px) {
     .name-type {
         font-size: smaller;
+    }
+    .contact-with-us {
+        padding: 20px !important;
+        margin-top: 45px !important;
+    }
+    .submit-email {
+        padding: 20px !important;
+        margin-top: 45px !important;
     }
 }

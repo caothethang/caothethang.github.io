@@ -16,6 +16,18 @@
 
 <body>
     <div class="wrapper">
+        <div class="row" id="search-input-hidden">
+            <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 m-auto pl-3 pr-3">
+                <div class="search-input border-0">
+                    <form action="">
+                        <div class="d-flex w-100" style="border: none !important;">
+                            <input type="text" name="search-input-box" id="search-input-text-hidden" placeholder="Tìm kiếm" class="w-100">
+                            <button id="search-input-btn-hidden" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid main">
             <div class="d-none" id="hidden-cover">
                 <div class="menu-hidden p-3">
@@ -217,7 +229,8 @@
                 <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 m-auto content pl-3 pr-3">
                     <header>
                         <div class="row mt-3 d-flex justify-content-between">
-                            <div class=" col-xl-0 col-lg-0 col-sm-3 col-3 hidden d-flex flex-column justify-content-center">
+                            <div
+                                class=" col-xl-0 col-lg-0 col-sm-3 col-3 hidden d-flex flex-column justify-content-center">
                                 <div>
                                     <i id="btn-show-menu" class="fas fa-bars"></i>
                                 </div>
@@ -235,7 +248,6 @@
                                                 class="fas fa-search"></i></button>
                                     </div>
                                 </form>
-
                             </div>
                             <div
                                 class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 d-flex flex-column justify-content-center shop-contact-cart">
@@ -250,7 +262,7 @@
                                         <span style="color: red;font-weight: bold;">CỬA HÀNG</span>
                                     </div>
                                     <div class="cart">
-                                        <i class="fas fa-search"></i>
+                                        <i class="fas fa-search" id="show-search-input"></i>
                                         <i class="fas fa-shopping-cart"></i>
                                     </div>
                                 </div>
@@ -436,6 +448,7 @@
                         </div>
                         <div class="col-xl-9 col-lg-8 col-md-12">
                             <div class="image-slider">
+                                <img src="assests/slider_1.jpg" alt="" width="100%">
                             </div>
                         </div>
                     </div>
@@ -806,19 +819,20 @@
                     <!-- news -->
                     <div class="row news-design">
                         <div class="col-12 text-center new-design-title new-title noi-that-go-title mt-5">
-                            <h2><strong>TƯ VẤN THIẾT KẾ</strong></h2>
+                            <h2><strong>TIN TỨC THIẾT KẾ</strong></h2>
                         </div>
-                        <div class="row mt-5 new-products new-design noi-that-go owl-carousel owl-theme" style="z-index: 0;">
+                        <div class="row mt-5 new-products new-design noi-that-go owl-carousel owl-theme"
+                            style="z-index: 0;">
                             <div class="item new-product">
 
                                 <div class="infor">
                                     <img src="assests/new-product.jpg" alt="" width="100%" style="max-width: 100%;">
-                                    <div
-                                        class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
+                                    <div class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
                                         <a style="font-weight: bold;">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng</a>
-                                    <span>
-                                        Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của người phương Đông nói chung và...
-                                    </span>
+                                        <span>
+                                            Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của
+                                            người phương Đông nói chung và...
+                                        </span>
 
                                     </div>
                                 </div>
@@ -827,11 +841,11 @@
 
                                 <div class="infor">
                                     <img src="assests/new-product-1.jpg" alt="" width="100%" style="max-width: 100%;">
-                                    <div
-                                        class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
+                                    <div class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
                                         <a style="font-weight: bold;">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng</a>
                                         <span>
-                                            Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của người phương Đông nói chung và...
+                                            Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của
+                                            người phương Đông nói chung và...
                                         </span>
 
                                     </div>
@@ -841,12 +855,12 @@
 
                                 <div class="infor">
                                     <img src="assests/new-product-3.jpg" alt="" width="100%" style="max-width: 100%;">
-                                    <div
-                                        class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
+                                    <div class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
                                         <a style="font-weight: bold;">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng</a>
-                                    <span>
-                                        Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của người phương Đông nói chung và...
-                                    </span>
+                                        <span>
+                                            Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của
+                                            người phương Đông nói chung và...
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -854,12 +868,12 @@
 
                                 <div class="infor">
                                     <img src="assests/new-product-2.jpg" alt="" width="100%" style="max-width: 100%;">
-                                    <div
-                                        class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
+                                    <div class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
                                         <a style="font-weight: bold;">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng</a>
-                                    <span>
-                                        Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của người phương Đông nói chung và...
-                                    </span>
+                                        <span>
+                                            Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của
+                                            người phương Đông nói chung và...
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -867,12 +881,12 @@
 
                                 <div class="infor">
                                     <img src="assests/new-product-3.jpg" alt="" width="100%" style="max-width: 100%;">
-                                    <div
-                                        class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
+                                    <div class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
                                         <a style="font-weight: bold;">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng</a>
-                                <span>
-                                    Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của người phương Đông nói chung và...
-                                </span>
+                                        <span>
+                                            Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của
+                                            người phương Đông nói chung và...
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -880,12 +894,12 @@
 
                                 <div class="infor">
                                     <img src="assests/new-product-2.jpg" alt="" width="100%" style="max-width: 100%;">
-                                    <div
-                                        class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
+                                    <div class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
                                         <a style="font-weight: bold;">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng</a>
-                                    <span>
-                                        Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của người phương Đông nói chung và...
-                                    </span>
+                                        <span>
+                                            Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của
+                                            người phương Đông nói chung và...
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -893,12 +907,12 @@
 
                                 <div class="infor">
                                     <img src="assests/new-product-1.jpg" alt="" width="100%" style="max-width: 100%;">
-                                    <div
-                                        class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
+                                    <div class="p-3 d-flex flex-column noi-that-go-detail new-product-detail">
                                         <a style="font-weight: bold;">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng</a>
-                                    <span>
-                                        Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của người phương Đông nói chung và...
-                                    </span>
+                                        <span>
+                                            Phong thủy là một yếu tố quan trọng trong văn hóa và đời sống hàng ngày của
+                                            người phương Đông nói chung và...
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -907,6 +921,108 @@
                     <!-- news -->
                 </div>
             </div>
+            <!-- footer -->
+
+            <div class="row footer mt-5 mb-5">
+                <div class="col-xl-10 col-lg-12 m-auto">
+                    <div class="row mt-5 d-flex justify-content-between">
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 text-center">
+                            <img src="assests/partner_6.jpg" alt="">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 text-center">
+                            <img src="assests/partner_6.jpg" alt="">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 text-center">
+                            <img src="assests/partner_6.jpg" alt="">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 text-center">
+                            <img src="assests/partner_6.jpg" alt="">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 text-center">
+                            <img src="assests/partner_6.jpg" alt="">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 text-center">
+                            <img src="assests/partner_6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 footer-categories">
+                <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 m-auto">
+                    <div class="row p-5">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                            <h4>VỀ CHÚNG TÔI</h4>
+                            <ul>
+                                <li><a href="">Trang chủ</a></li>
+                                <li><a href="">Giới thiệu</a></li>
+                                <li><a href="">Sản phẩm</a></li>
+                                <li><a href="">Hàng mới về</a></li>
+                                <li><a href="">Tin tức</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                            <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+                            <ul>
+                                <li><a href="">Trang chủ</a></li>
+                                <li><a href="">Giới thiệu</a></li>
+                                <li><a href="">Sản phẩm</a></li>
+                                <li><a href="">Hàng mới về</a></li>
+                                <li><a href="">Tin tức</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 contact-with-us">
+                            <h4>LIÊN HỆ VỚI CHÚNG TÔI</h4>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span>Địa chỉ</span>
+                                        <p>30 Đường 2/9, Phường Bình Hiên, Quận Hải Châu, Đà Nẵng</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Hotline</span>
+                                        <p>090 909 000</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Email</span>
+                                        <p>evoteamthemes@gmail.com</p>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 submit-email">
+                            <h4>ĐĂNG KÝ NHẬN BẢN TIN</h4>
+                                <div class="form-group mt-3 d-flex">
+                                    <input type="email" class="form-control p-2 w-75" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email của bạn">
+                                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    <button type="submit" class="btn w-25"
+                                        style="background: #f68e2e;color: white;padding: 0px 20px !important;border-radius: 0 !important;border: 1px solid;">
+                                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <p class="mt-4">Bạn là khách hàng mới. Đăng ký email và nhận mã giảm giá 50.000 đ.</p>
+                                <div class="row d-fex justify-content-between mt-4">
+                                    <div class="col-3">
+                                        <img src="assests/bct.jpg" alt="" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/bct.jpg" alt="" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col-3 ">
+                                    <img src="assests/bct.jpg" alt="" style="max-width: 100%;">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
         </div>
     </div>
 </body>
@@ -925,11 +1041,11 @@
         margin: 10,
         stagePadding: 50,
         responsiveClass: true,
-        nav:true,
+        nav: true,
         navText: ['<i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>'],
         responsive: {
             0: {
-                items: 1,
+                items: 3,
                 nav: true
             },
             600: {
