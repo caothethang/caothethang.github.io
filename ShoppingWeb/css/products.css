@@ -302,9 +302,7 @@ button[type=submit]:focus {
     width: 100%;
     font-size: smaller;
 }
-.owl-nav button{
-    p
-}
+
 .new-products:hover .owl-nav {
     display: flex;
     transition: .5s ease;
@@ -471,8 +469,6 @@ button[type=submit]:focus {
 .footer-categories a {
     color: white;
 }
-
-.footer-categories ul {}
 
 .footer-categories h4 {
     color: white;
