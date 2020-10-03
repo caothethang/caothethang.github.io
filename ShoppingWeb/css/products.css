@@ -587,6 +587,7 @@ button[type=submit]:focus {
         width: 40% !important;
     }
     .filter-btn {
+        padding: 8px !important;
         display: block !important;
     }
 }
@@ -602,6 +603,7 @@ button[type=submit]:focus {
         width: 40% !important;
     }
     .filter-btn {
+        padding: 8px !important;
         display: block !important;
     }
 }
