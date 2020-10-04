@@ -593,6 +593,9 @@ button[type=submit]:focus {
         padding: 8px !important;
         display: block !important;
     }
+    .product-infor {
+        padding-left: 0 !important;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -609,6 +612,14 @@ button[type=submit]:focus {
         padding: 8px !important;
         display: block !important;
     }
+    .menu-hidden {
+        width: 50% !important;
+        z-index: 2 !important;
+    }
+    .cover {
+        width: 100% !important;
+    }
+   
 }
 
 @media all and (max-width: 576px) {
@@ -626,4 +637,12 @@ button[type=submit]:focus {
     .filter-btn {
         display: block !important;
     }
+    .menu-hidden {
+        width: 60% !important;
+        z-index: 2 !important;
+    }
+    .cover {
+        width: 100% !important;
+    }
+    
 }

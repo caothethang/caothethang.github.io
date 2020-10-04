@@ -1,11 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+
+        <div class="row" id="search-input-hidden">
+            <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 m-auto pl-3 pr-3">
+                <div class="search-input border-0">
+                    <form action="">
+                        <div class="d-flex w-100" style="border: none !important;">
+                            <input type="text" name="search-input-box" id="search-input-text-hidden"
+                                placeholder="Tìm kiếm" class="w-100">
+                            <button id="search-input-btn-hidden" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid main">
+            <div class="d-none" id="hidden-cover">
+                <div class="menu-hidden p-3">
+                    <div class="d-flex justify-content-center" style="position: relative;">
+                        <img src="assests/logo.jpeg" alt="" width="60%">
+                        <i id="btn-hide-menu" class="fas fa-arrow-left"
+                            style="position: absolute;right: 2%;top: 30%;"></i>
+                    </div>
+                    <div class="d-flex justify-content-around mt-5">
+                        <a style="color: black !important;font-weight: 700 !important;" href="">ĐĂNG NHẬP</a>
+                        <a style="color: black !important;font-weight: 700 !important;" href="">ĐĂNG KÝ</a>
+                    </div>
+                    <div class="mt-5" style="border-bottom: 2px solid #f68e2e;">
+                        <h6 style="background-color: orange;padding: 10px !important;color:white;"><i
+                                class="fas fa-bars"></i> &nbsp;TẤT CẢ SẢN
+                            PHẨM&nbsp;
+                            <i class="fas fa-chevron-down"></i></h6>
+                        <ul class="list-group list-group-left">
+                            <li class="list-group-item have-submenu">
+                                <div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+
+                                            <a href="">Nội thất gỗ</a>
+                                        </div>
+                                        <i class="fas fa-caret-right "></i>
+                                    </div>
+                                    <ul class="pl-3">
+                                        <li>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+
+                                                    <a href="">Bàn</a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">Bàn ăn</a></li>
+                                                <li><a href="#">Bàn trang điểm</a></li>
+                                                <li><a href="#">Bàn trang trí</a></li>
+                                                <li><a href="#">Bàn cà phê</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+
+                                                    <a href="">Bộ bàn ăn</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+
+                                                    <a href="">Ghế</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+
+                                                    <a href="">Tủ</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+
+                                                    <a href="">Giường</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-group-item have-submenu">
+                                <div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+
+                                            <a href="">Sofa , Ghế thư giãn & Nệm</a>
+                                        </div>
+                                        <i class="fas fa-caret-right"></i>
+                                    </div>
+                                    <ul class="pl-3">
+                                        <li>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+
+                                                    <a href="">Sofa</a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">Bàn ăn</a></li>
+                                                <li><a href="#">Bàn trang điểm</a></li>
+                                                <li><a href="#">Bàn trang trí</a></li>
+                                                <li><a href="#">Bàn cà phê</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+
+                                                    <a href="">Nệm</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+
+                                                    <a href="">Ghế thư giãn</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+
+                                                    <a href="">Đôn mềm</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between have-submenu">
+                                <div>
+                                    <a href="">Đồ trang trí</a>
+                                </div>
+                                <i class="fas fa-caret-right"></i>
+                            </li>
+                            <li class="list-group-item">
+
+                                <a href="">Đồ dùng vải</a>
+                            </li>
+                            <li class="list-group-item">
+
+                                <a href="">Vật dụng bàn ăn</a>
+                            </li>
+                            <li class="list-group-item">
+
+                                <a href="">Đồ dùng văn phòng</a>
+                            </li>
+                            <li class="list-group-item">
+
+                                <a href="">Đèn</a>
+                            </li>
+                            <li class="list-group-item">
+
+                                <a href="">Dụng cụ nhà bếp</a>
+                            </li>
+                            <li class="list-group-item">
+                                <b><a id="see-more" href="">Xem thêm ...</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <ul class="menu-type-right d-flex flex-column">
+                            <li>
+                                <span><a href="">TRANG CHỦ</a></span>
+                            </li>
+                            <li>
+                                <span><a href="">GIỚI THIỆU</a></span>
+                            </li>
+                            <li>
+                                <span><a href="">SẢN PHẨM</a></span>
+                            </li>
+                            <li>
+                                <span><a href="">HÀNG GIỚI THIỆU</a></span>
+                            </li>
+                            <li>
+                                <span><a href="">TIN TỨC</a></span>
+                            </li>
+                            <li>
+                                <span><a href="">LIÊN HỆ</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cover"></div>
+            </div>
+
+            <div class="row login-register">
+                <div class="col-xl-1 col-lg-0"></div>
+                <div class="col-xl-5 col-lg-6 slogan font-weight-bold text-white pl-3">
+                    <span>SIÊU THỊ NỘI THẤT & TRANG TRÍ EVO NỘI THẤT</span>
+                </div>
+                <div class="col-xl-5 col-lg-6 btn-login-register text-right text-white font-weight-bold pr-3">
+                    <span class="border-right"><i class="fas fa-sign-in-alt">&nbsp;</i><a class="text-white"
+                            href="">ĐĂNG NHẬP</a>&nbsp;</span>
+                    <span>&nbsp;<i class="fas fa-user-plus"></i>&nbsp;<a class="text-white" href="">ĐĂNG KÍ</a></span>
+                </div>
+                <div class="col-xl-1 col-lg-0"></div>
+            </div>
+            <div class="row">
+
+                <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 m-auto content pl-3 pr-3">
+                    <header>
+                        <div class="row mt-3 d-flex justify-content-between">
+                            <div
+                                class=" col-xl-0 col-lg-0 col-sm-3 col-3 hidden d-flex flex-column justify-content-center">
+                                <div>
+                                    <i id="btn-show-menu" class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 image-logo">
+                                <img src="assests/logo.jpeg" alt="">
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 search-input d-flex flex-column justify-content-center">
+                                <form action="">
+                                    <div class="d-flex">
+                                        <input type="text" name="search-input-box" id="search-input-text"
+                                            placeholder="Tìm kiếm">
+                                        <button id="search-input-btn" type="submit"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div
+                                class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 d-flex flex-column justify-content-center shop-contact-cart">
+                                <div class="d-flex justify-content-between shop-contact-info">
+                                    <div class="d-flex flex-column text-center contact-number">
+                                        <span style="font-size: smaller;display: inline-block;font-weight: bold;">LIÊN
+                                            HỆ HOTLINE</span>
+                                        <a style="color: red;font-weight: bold;">0909 090 009</a>
+                                    </div>
+                                    <div class="d-flex flex-column text-center find-address">
+                                        <span style="font-size: smaller;font-weight: bold;">TÌM ĐỊA CHỈ</span>
+                                        <span style="color: red;font-weight: bold;">CỬA HÀNG</span>
+                                    </div>
+                                    <div class="cart">
+                                        <i class="fas fa-search" id="show-search-input"></i>
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- content -->
+                    <div class="row mt-5">
+                        <div class="col-xl-3 col-lg-4 all-product-type">
+                            <h6 style="background-color: orange;padding: 10px !important;color:white;"><i
+                                    class="fas fa-bars"></i> &nbsp;TẤT CẢ SẢN PHẨM&nbsp;
+                                <i class="fas fa-chevron-down"></i></h6>
+                            <ul class="list-group list-group-left position-absolute">
+                                <li class="list-group-item have-submenu">
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <i class="fas fa-chevron-right"></i>
+                                                <a href="">Nội thất gỗ</a>
+                                            </div>
+                                            <i class="fas fa-caret-right "></i>
+                                        </div>
+                                        <ul class="pl-3">
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <a href="">Bàn</a>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="#">Bàn ăn</a></li>
+                                                    <li><a href="#">Bàn trang điểm</a></li>
+                                                    <li><a href="#">Bàn trang trí</a></li>
+                                                    <li><a href="#">Bàn cà phê</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <a href="">Bộ bàn ăn</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <a href="">Ghế</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <a href="">Tủ</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <a href="">Giường</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-group-item have-submenu">
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <i class="fas fa-chevron-right"></i>
+                                                <a href="">Sofa , Ghế thư giãn & Nệm</a>
+                                            </div>
+                                            <i class="fas fa-caret-right"></i>
+                                        </div>
+                                        <ul class="pl-3">
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <a href="">Sofa</a>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="#">Bàn ăn</a></li>
+                                                    <li><a href="#">Bàn trang điểm</a></li>
+                                                    <li><a href="#">Bàn trang trí</a></li>
+                                                    <li><a href="#">Bàn cà phê</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <a href="">Nệm</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <a href="">Ghế thư giãn</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <a href="">Đôn mềm</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between have-submenu">
+                                    <div>
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="">Đồ trang trí</a>
+                                    </div>
+                                    <i class="fas fa-caret-right"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <a href="">Đồ dùng vải</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <a href="">Vật dụng bàn ăn</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <a href="">Đồ dùng văn phòng</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <a href="">Đèn</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <a href="">Dụng cụ nhà bếp</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-chevron-right "></i>
+                                    <b><a id="see-more" href="">Xem thêm ...</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-9 col-lg-8">
+                            <ul class="menu-type-right">
+                                <li>
+                                    <span><a href="">TRANG CHỦ</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="">GIỚI THIỆU</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="">SẢN PHẨM</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="">HÀNG GIỚI THIỆU</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="">TIN TỨC</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="">LIÊN HỆ</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 pt-3">
+                            <div class="" style="border-bottom: 1px solid #ebebeb;padding-bottom: 20px !important;">
+                                <a style="color: black;" href="">Trang chủ ></a>
+                                <a href="" style="color: black;">Tất cả sản phẩm ></a>
+                                <a href="" style="color: #f68e2e;">Mẫu giường ngủ gỗ thiết kế tự nhiên</a>
+                            </div>
+                            <div class="pt-5" style="border-bottom: 1px solid #ebebeb;padding-bottom: 20px !important;">
+                                <h4><b>Mẫu giường ngủ gỗ tự nhiên thiết kế thông minh</b></h4>
+                                <div class="d-flex">
+                                    <div
+                                        style="border-right: 1px solid red;height: 16px;width: fit-content;line-height: 16px; margin: 8px !important;padding-right: 8px !important;margin-left: 0 !important;">
+                                        <span>SKU:</span>
+                                        <span style="color: #f68e2e;">4367</span>
+                                    </div>
+                                    <div style="line-height: 16px;margin: 8px !important;">
+                                        <span>Thương hiệu:</span>
+                                        <span style="color: #f68e2e;">Evo Nội thất</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-4" style="height: fit-content;">
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                                    <img src="https://bizweb.dktcdn.net/thumb/large/100/360/933/products/ezgif-2-c7f2105dbc1a.jpg?v=1565273733053"
+                                        alt="" style="max-width: 100% !important;width: 100%;">
+                                    <div class="row mt-5 other-image new-products owl-carousel owl-theme"
+                                        style="z-index: 0;">
+                                        <div class="item new-product">
+                                            <div class="infor position-relative">
+                                                <img src="https://bizweb.dktcdn.net/100/360/933/products/giuong-ngu-gia-dinh-thanh-lich-bang-go-tu-nhien-ghs-9068-ava.jpg?v=1565273801200"
+                                                    alt="" width="100%" style="max-width: 100%">
+                                            </div>
+                                        </div>
+                                        <div class="item new-product">
+
+                                            <div class="infor position-relative">
+                                                <img src="https://bizweb.dktcdn.net/100/360/933/products/giuong-ngu-gia-dinh-thanh-lich-bang-go-tu-nhien-ghs-9068-ava.jpg?v=1565273801200"
+                                                    alt="" width="100%" style="max-width: 100%;">
+
+                                            </div>
+                                        </div>
+                                        <div class="item new-product">
+
+                                            <div class="infor position-relative">
+                                                <img src="https://bizweb.dktcdn.net/100/360/933/products/giuong-ngu-gia-dinh-thanh-lich-bang-go-tu-nhien-ghs-9068-ava.jpg?v=1565273801200"
+                                                    alt="" width="100%" style="max-width: 100%;">
+                                            </div>
+                                        </div>
+                                        <div class="item new-product">
+
+                                            <div class="infor position-relative">
+                                                <img src="https://bizweb.dktcdn.net/100/360/933/products/giuong-ngu-gia-dinh-thanh-lich-bang-go-tu-nhien-ghs-9068-ava.jpg?v=15652738012007"
+                                                    alt="" width="100%" style="max-width: 100%;">
+                                            </div>
+                                        </div>
+                                        <div class="item new-product">
+                                            <div class="infor position-relative">
+                                                <img src="https://bizweb.dktcdn.net/100/360/933/products/giuong-ngu-gia-dinh-thanh-lich-bang-go-tu-nhien-ghs-9068-ava.jpg?v=1565273801200"
+                                                    alt="" width="100%" style="max-width: 100%;">
+                                            </div>
+                                        </div>
+                                        <div class="item new-product">
+                                            <div class="infor position-relative">
+                                                <img src="https://bizweb.dktcdn.net/100/360/933/products/giuong-ngu-gia-dinh-thanh-lich-bang-go-tu-nhien-ghs-9068-ava.jpg?v=1565273801200"
+                                                    alt="" width="100%" style="max-width: 100%;">
+                                            </div>
+                                        </div>
+                                        <div class="item new-product">
+                                            <div class="infor position-relative">
+                                                <img src="https://bizweb.dktcdn.net/100/360/933/products/giuong-ngu-gia-dinh-thanh-lich-bang-go-tu-nhien-ghs-9068-ava.jpg?v=1565273801200"
+                                                    alt="" width="100%" style="max-width: 100%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 pl-5 all-product-infor">
+                                    <div class="product-infor"
+                                        style="display: flex;flex-direction: column; justify-content: space-around;">
+                                        <span class="product-price d-inline-block"
+                                            style="font-size: 24px;color: red;font-weight: bold;">2.490.000 ₫</span>
+                                        <div style="font-weight: bolder;">
+                                            <span>Tình trạng: </span><span style="color: #f68e2e;">Còn hàng</span>
+                                        </div>
+
+                                        <div>
+                                            <p>- Làm sạch sản phẩm bằng khăn mềm với nước sạch hoặc dung dịch tẩy rửa
+                                                dành
+                                                riêng
+                                                cho gỗ, sau đó lau khô sản phẩm
+                                                bằng
+                                                khăn mềm.</p>
+                                            <p>- Tránh để sản phẩm tiếp xúc với nước và nhiệt độ cao trong thời gian
+                                                dài.
+                                            </p>
+                                            <p>- Không dùng vật sắc nhọn chà xát sản phẩm..</p>
+                                        </div>
+                                        <div class="d-flex flex-column color-product pt-3">
+                                            <b style="padding-bottom: 10px !important;">Màu sắc: </b>
+                                            <div>
+                                                <button id="red">Đỏ</button>
+                                                <button id="green">Xanh</button>
+                                                <button id="black">Đen</button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex pt-4">
+                                            <b style="padding-top: 10px !important;padding-right: 15px !important;">Số
+                                                lượng :</b>
+                                            <div class="border product-number">
+                                                <button>-</button>
+                                                <span>1</span>
+                                                <button>+</button>
+                                            </div>
+                                        </div>
+                                        <div class="buy-now"
+                                            style="width: 100%;text-align: center;background: red;padding: 15px !important;font-weight: bold;color: white;">
+                                            <h5>MUA NGAY VỚI GIÁ 2.490.000 ₫</h5>
+                                            <p>Đặt mua giao hàng tận nơi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <b>Gọi điện để được tư vấn: <span>0900 090 090</span></b>
+                                        <div class="mt-3" style="height: 30px !important;">
+                                            <b>Hình thức thanh toán :</b>
+                                            <img src="https://bizweb.dktcdn.net/100/360/933/themes/728303/assets/ppayment-1.svg?1598934578760" alt="" style="height: 50px !important;padding-left: 10px !important;">
+                                            <img src="https://bizweb.dktcdn.net/100/360/933/themes/728303/assets/ppayment-2.svg?1598934578760" alt="" style="height: 50px;padding-left: 10px !important;">
+                                            <img src="https://bizweb.dktcdn.net/100/360/933/themes/728303/assets/ppayment-3.svg?1598934578760" alt="" style="height: 50px;padding-left: 10px !important;">
+                                        </div>
+                                        <div class="mt-3">
+                                            <img src="https://bizweb.dktcdn.net/100/360/933/themes/728303/assets/size_image.svg?1598934578760" alt=""
+                                                style="height:25px;">
+                                                <a href="" style="color: black !important;"><b>Hướng dẫn thanh toán</b></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- type -->
+                        <!-- content -->
+
+                        <!-- footer -->
+
+
+                        <!-- footer -->
+                    </div>
+                </div>
+                <div class="row mt-5 footer-categories">
+                    <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 m-auto">
+                        <div class="row p-5">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                                <h4>VỀ CHÚNG TÔI</h4>
+                                <ul>
+                                    <li><a href="">Trang chủ</a></li>
+                                    <li><a href="">Giới thiệu</a></li>
+                                    <li><a href="">Sản phẩm</a></li>
+                                    <li><a href="">Hàng mới về</a></li>
+                                    <li><a href="">Tin tức</a></li>
+                                    <li><a href="">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                                <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+                                <ul>
+                                    <li><a href="">Trang chủ</a></li>
+                                    <li><a href="">Giới thiệu</a></li>
+                                    <li><a href="">Sản phẩm</a></li>
+                                    <li><a href="">Hàng mới về</a></li>
+                                    <li><a href="">Tin tức</a></li>
+                                    <li><a href="">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 contact-with-us">
+                                <h4>LIÊN HỆ VỚI CHÚNG TÔI</h4>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <span>Địa chỉ</span>
+                                            <p>30 Đường 2/9, Phường Bình Hiên, Quận Hải Châu, Đà Nẵng</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>Hotline</span>
+                                            <p>090 909 000</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>Email</span>
+                                            <p>evoteamthemes@gmail.com</p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 submit-email">
+                                <h4>ĐĂNG KÝ NHẬN BẢN TIN</h4>
+                                <div class="form-group mt-3 d-flex">
+                                    <input type="email" class="form-control p-2 w-75" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Email của bạn">
+                                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    <button type="submit" class="btn w-25"
+                                        style="background: #f68e2e;color: white;padding: 0px 20px !important;border-radius: 0 !important;border: 1px solid;">
+                                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <p class="mt-4">Bạn là khách hàng mới. Đăng ký email và nhận mã giảm giá 50.000 đ.
+                                </p>
+                                <div class="row d-fex justify-content-between mt-4">
+                                    <div class="col-3">
+                                        <img src="assests/bct.jpg" alt="" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/bct.jpg" alt="" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col-3 ">
+                                        <img src="assests/bct.jpg" alt="" style="max-width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        stagePadding: 30,
+        responsiveClass: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>'],
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 2,
+                nav: true
+            },
+            1000: {
+                items: 4,
+                nav: true,
+                loop: true
+            }
+        }
+    })
+</script>
+<script src="js/product.js"></script>
+
 </html>
