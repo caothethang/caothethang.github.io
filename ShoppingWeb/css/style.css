@@ -148,6 +148,16 @@ button[type=submit]:focus {
 
 /* content */
 
+.owl-nav button:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.owl-nav button:hover {
+    color: black !important;
+    background: none !important;
+}
+
 /* menu-left */
 
 .list-group-left {

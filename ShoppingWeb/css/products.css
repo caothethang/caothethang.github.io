@@ -313,6 +313,11 @@ button[type=submit]:focus {
     border: none !important;
 }
 
+.owl-nav button:hover {
+    color: black !important;
+    background: none !important;
+}
+
 /* next-pre btn */
 
 .new-title h2::before {
@@ -619,7 +624,6 @@ button[type=submit]:focus {
     .cover {
         width: 100% !important;
     }
-   
 }
 
 @media all and (max-width: 576px) {
@@ -644,5 +648,4 @@ button[type=submit]:focus {
     .cover {
         width: 100% !important;
     }
-    
 }

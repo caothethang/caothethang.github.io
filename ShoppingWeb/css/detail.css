@@ -323,7 +323,7 @@ button[type=submit]:focus {
 }
 
 .new-product {
-    padding: 20px !important;
+    padding: 10px !important;
 }
 
 .new-product-detail {
@@ -464,9 +464,9 @@ button:focus {
     display: none;
     justify-content: space-between;
     position: absolute;
-    top: 40%;
+    top: 37%;
     width: 100%;
-    font-size: smaller;
+    font-size: 10px !important;
 }
 
 .new-products:hover .owl-nav {
@@ -474,16 +474,33 @@ button:focus {
     transition: .5s ease;
 }
 
+.owl-nav button:hover {
+    color: black !important;
+    background: none !important;
+}
+
 .owl-nav button:focus {
     outline: none !important;
     border: none !important;
+}
+/* reviews */
+.w3-bar-item:hover{
+    background-color: white !important;
 }
 
 /* next-pre btn */
 
 /* responsive */
 
-@media all and (min-width:1200px) {}
+@media all and (max-width:1200px) {
+    .new-product {
+        padding: 10px !important;
+    }
+    .owl-nav {
+        top: 40% !important;
+        font-size: 10px !important;
+    }
+}
 
 @media all and (max-width: 992px) {
     .slogan {
