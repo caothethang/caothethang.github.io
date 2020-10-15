@@ -229,7 +229,7 @@ button[type=submit]:focus {
 }
 
 .menu-type-right li:hover .list-group-left {
-    display: block;
+    display: block !important;
 }
 
 /* submenu left */
