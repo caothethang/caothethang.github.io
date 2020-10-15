@@ -17,7 +17,7 @@
 
 <body>
     <div class="wrapper">
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
         <div class="row" id="search-input-hidden">
             <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 m-auto pl-3 pr-3">
                 <div class="search-input border-0">
@@ -718,55 +718,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-<script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        stagePadding: 30,
-        responsiveClass: true,
-        nav: true,
-        navText: ['<i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>'],
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            600: {
-                items: 2,
-                nav: true
-            },
-            1000: {
-                items: 4,
-                nav: true,
-                loop: true
-            }
-        }
-    })
-</script>
-<script src="js/product.js"></script>
-<script>
-    // đây này
-    var btnDes = document.getElementsByClassName("w3-bar-item")
-    btnDes[0].addEventListener("click", function () {
-        btnDes[1].style.borderBottom = "none";
-        btnDes[0].style.borderBottom = "2px solid black";
-        btnDes[1].style.color = "#f68e2e";
-        btnDes[0].style.color = "black";
-    })
-    btnDes[1].addEventListener("click", function () {
-        btnDes[0].style.borderBottom = "none";
-        btnDes[1].style.borderBottom = "2px solid black";
-        btnDes[0].style.color = "#f68e2e";
-        btnDes[1].style.color = "black";
-    })
-    function openDes(desName) {
-        var i;
-        var x = document.getElementsByClassName("description-product");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        document.getElementById(desName).style.display = "block";
-    }
-</script>
+<script src="js/details.js"></script>
 
 </html>
