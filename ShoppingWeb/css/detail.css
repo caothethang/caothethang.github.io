@@ -152,6 +152,7 @@ button[type=submit]:focus {
 .all-product-type:hover .list-group {
     display: block !important;
     width: 100% !important;
+    transition: 1s ease;
 }
 
 /* header */
@@ -226,6 +227,7 @@ button[type=submit]:focus {
 
 .menu-type-right li:hover .list-group-left {
     display: block;
+    transition: 1s ease;
 }
 
 /* submenu left */
@@ -258,12 +260,12 @@ button[type=submit]:focus {
 
 .have-submenu:hover ul {
     display: block;
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 .have-submenu ul li:hover ul {
     display: block !important;
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 /* new-products */
