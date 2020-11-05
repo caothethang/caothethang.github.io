@@ -41,13 +41,18 @@
 .formRegister label {
     padding-bottom: 10px !important;
     font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .formRegister .submit {
     margin-top: 16px !important;
     padding: .375rem .75rem !important;
+    background-color: #f68e2e;
+    border: 1px solid #f68e2e;
+    padding: 15px 100px !important;
+    font-size: 17px;
+    letter-spacing: 3px;
 }
-
 .required {
     color: red;
 }
