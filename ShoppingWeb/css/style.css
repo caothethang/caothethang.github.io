@@ -540,7 +540,19 @@ button[type=submit]:focus {
     /* Add a dark-grey background on hover */
     opacity: 1;
 }
-
+/* modal */
+.modal-header,.modal-body,.modal-footer{
+    padding: 1rem 1rem !important;
+}
+.modal-footer>*{
+    margin: .25rem !important;
+}
+.modal-footer button{
+    padding: .375rem .75rem !important;
+}
+.modal-dialog{
+    margin: auto !important;
+}
 /* responsive */
 
 @media all and (min-width:1200px) {}
