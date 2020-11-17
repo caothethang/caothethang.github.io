@@ -17,7 +17,7 @@ $(document).ready(() => {
     $(".cover").click(() => {
         $(".menu-hidden").animate({ left: "-60%" }, "slow");
         $(".cover").animate({ left: "100%" }, "slow");
-        $("#hidden-cover").css("display", "none !important;")
+        document.getElementById("hidden-cover").setAttribute("style", "display:none !important;")
         $("#search-input-hidden").css("display", "none");
         $("#search-input-text-hidden").val("");
     })

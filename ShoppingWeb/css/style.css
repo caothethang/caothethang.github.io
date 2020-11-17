@@ -166,6 +166,7 @@ button[type=submit]:focus {
 }
 
 .list-group-left li {
+    position: relative;
     padding: 8px !important;
     border: none !important;
     padding-left: 2px !important;
@@ -214,12 +215,24 @@ button[type=submit]:focus {
 
 /* submenu left */
 
+.have-submenu {
+    position: relative;
+}
+
 .have-submenu ul {
     display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 200px !important;
+    z-index: 1000000;
+    background-color: #fff;
 }
 
 .have-submenu ul li ul {
-    display: none !important;
+    display: none;
+    position: absolute;
+    width: 200px !important;
     padding-left: 36px !important;
 }
 
@@ -237,17 +250,22 @@ button[type=submit]:focus {
 
 .have-submenu ul li a:hover {
     color: black !important;
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 .have-submenu:hover ul {
     display: block;
-    transition: .5s ease;
+    transition: 1s ease;
+}
+
+.have-submenu:hover ul li ul {
+    display: none;
+    transition: 1s ease;
 }
 
 .have-submenu ul li:hover ul {
     display: block !important;
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 /* image-slider */
@@ -265,7 +283,9 @@ button[type=submit]:focus {
 
 /* new-products */
 
-/* new-title */
+.new-title{
+    margin-top: 5rem !important;
+}
 
 .new-products {
     position: relative;
@@ -540,19 +560,25 @@ button[type=submit]:focus {
     /* Add a dark-grey background on hover */
     opacity: 1;
 }
+
 /* modal */
-.modal-header,.modal-body,.modal-footer{
+
+.modal-header, .modal-body, .modal-footer {
     padding: 1rem 1rem !important;
 }
-.modal-footer>*{
+
+.modal-footer>* {
     margin: .25rem !important;
 }
-.modal-footer button{
+
+.modal-footer button {
     padding: .375rem .75rem !important;
 }
-.modal-dialog{
+
+.modal-dialog {
     margin: auto !important;
 }
+
 /* responsive */
 
 @media all and (min-width:1200px) {}
@@ -603,6 +629,48 @@ button[type=submit]:focus {
     .list-group-left {
         display: none !important;
     }
+    /*  */
+    
+    .have-submenu ul {
+        position: static !important;
+        display: none;
+        
+    }
+    .have-submenu ul li ul {
+        position: static !important;
+        width: max-content !important;
+        padding-left: 36px !important;
+    }
+    .list-group-left li{
+        flex-direction: column !important;
+    } 
+    
+    .have-submenu li ul li:last-child {
+        border-bottom: none !important;
+    }
+    .have-submenu li:last-child {
+        border-bottom: none !important;
+    }
+    .have-submenu li a {
+        color: black !important;
+    }
+    .have-submenu ul li a:hover {
+        color: black !important;
+        transition: 1s ease;
+    }
+    .have-submenu:hover ul {
+        display: block;
+        transition: 1s ease;
+    }
+    .have-submenu:hover ul li ul {
+        display: none !important;
+        transition: 1s ease;
+    }
+    .have-submenu ul li:hover ul {
+        display: block !important;
+        transition: 1s ease;
+    }
+    /*  */
     .image-slider {
         height: 300px;
     }
