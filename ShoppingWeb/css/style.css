@@ -217,6 +217,7 @@ button[type=submit]:focus {
 
 .have-submenu {
     position: relative;
+    align-items: center !important;
 }
 
 .have-submenu ul {
@@ -641,10 +642,6 @@ button[type=submit]:focus {
         width: max-content !important;
         padding-left: 36px !important;
     }
-    .list-group-left li{
-        flex-direction: column !important;
-    } 
-    
     .have-submenu li ul li:last-child {
         border-bottom: none !important;
     }
